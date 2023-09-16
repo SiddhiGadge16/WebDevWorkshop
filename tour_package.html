@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>introduction</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            color: white;
+            text-align: center;
+            background-image: url(bg2.jpg);
+        }
+        .buttons{
+            height: 30px;
+            width: 30px;
+        }
+
+        .buttons:hover{
+            color:rgb(255, 239, 203);
+            background-color:#c69cea;
+        }
+
+        #title{
+            color: rgb(247, 247, 247);
+            text-shadow: 2px 3px #8800ff;
+        }
+        
+        .homecolor{
+            color: #c69cea;
+        }
+
+        .nav li {
+            float:left; 
+            list-style: none ; /*removes the dots*/
+            margin: 13px 20px; /*for padding otherwise they stick*/
+        } 
+
+       .nav{
+        display:flex;
+       }
+
+       .nav li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            border: 3px solid #583278;
+            border-radius: 20px;
+        }
+        
+        .nav li a:hover{
+            color:rgb(255, 239, 203);
+            background-color:#c69cea;
+            border: 2px solid black;
+        }
+        #title{
+            color: rgb(247, 247, 247);
+            text-shadow: 2px 3px #8800ff;
+            text-decoration: underline;
+        }
+
+        #foot{
+            position:fixed;
+            bottom:4px;
+            right: 4px;
+            display: inline;
+        }
+
+        .card {
+          box-shadow: 0 4px 8px 0 white;
+          transition: 0.3s;
+          width: 25%;
+        }
+        
+         .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+         
+        .container {
+          padding: 2px 5px;
+        }
+
+        button {
+        background-color: rgb(117, 198, 249);
+        color: black;
+        font-size: 15px;
+        margin: auto;
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+    <script>
+        alert("Ready to go for a tour!");
+    </script>
+
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        <ul> 
+            <li><a href="introduction.html"> ABOUT US</a></li>
+            <li><a href="adventures.html"> ADVENTURES AND EXPEDITIONS</a></li>
+            <li><a href="contact.html"> CONTACT US</a></li>
+            <li><a href="tour_package.html">Tour Packages</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    </header>
+    <h2>TOURS</h2>
+
+    <div class="card">
+      <img src="eastAmerica.jpg" alt="East America" style="width:100%">
+       <div class="container">
+         <h4 id="demo"><b>USA East Coast</b></h4> 
+           Starts from &ensp; &ensp;<b>&#8377; 2,50,000</h3><br><br>
+            <button onclick="confirm_tour()">Book</button>
+
+            
+            <button type="button" onclick="document.getElementById('demo').style.color='red'">Click Me!</button>
+            <!-- changes html content  -->
+         <p id="dip"> &#9992; Travel <b>7</b> days &ensp; &ensp; <b>1</b> Country &ensp; &ensp; <b>4</b> Cities </p> 
+         <button onclick="hide()">Hide Details</button>&ensp;&ensp;<button onclick="show()">View Details</button><br><br>
+        </div> 
+    </div>
+
+</body>
+</html>
